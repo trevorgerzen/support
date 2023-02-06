@@ -163,7 +163,7 @@ def get_devices(params=None, ordering="serial_number"):
         # print(params)
 
         # check to see if a platform was sprecified
-        response = kandji_api(method="GET", endpoint="/v1/devices", params=params)
+        response = kandji_api(method="GET", endpoint="devices", params=params)
 
         count += len(response)
         offset += limit
